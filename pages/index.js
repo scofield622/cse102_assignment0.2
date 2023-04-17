@@ -2,9 +2,16 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 
+
+
 export default function Home() {
   return (
     <div className={styles.container}>
+
+      <Link href="/index.html">
+        <span>You can see bouncing balls by clicking this card!</span>
+      </Link>
+
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,7 +19,7 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-        Welcome to <Link href="posts/first-page">Woong Jin's World!</Link>
+          Welcome to <Link href="posts/first-page">Woong Jin's World!</Link>
         </h1>
 
         <p className={styles.description}>
